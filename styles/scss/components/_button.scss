@@ -1,0 +1,25 @@
+.button{
+    padding: 10px 25px;
+    background-color: #eb4d4b;
+    border: 1px solid #eb4d4b;
+    color: $fc-primary--white;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 6px;
+
+    &:hover{
+        cursor: pointer;
+        background-color: #ff7979;
+        border: 1px solid #ff7979;
+    }
+
+    &--transparent{
+        background-color: transparent;
+        border: 1px solid #eb4d4b;
+        color: #eb4d4b;
+
+        &:hover{
+            background-color: transparent;
+        }
+    }
+}

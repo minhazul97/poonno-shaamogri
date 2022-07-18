@@ -1,0 +1,80 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Regular font family
+/// @type List
+$primary-font: 'Montserrat', sans-serif;
+
+/// font sizes for different width screen
+$fs-heading--large: 40px;
+$fs-heading--medium: 34px;
+$fs-heading--small: 30px;
+$fs-primary-text--large: 24px;
+$fs-primary-text--small: 20px;
+$fs-secondary-text--large: 16px;
+$fs-secondary-text--small: 14px;
+$fs-tertiary-text--large: 18px;
+$fs-tertiary-text--medium: 13px;
+$fs-tertiary-text--small: 12px;
+
+/// font weight for the website
+$fw-normal: normal;
+$fw-medium: 500;
+$fw-bold: bold;
+$fw-black: 900;
+
+/// color scheme for the website
+/// @type Color
+$fc-primary--dark: rgb(20, 21, 21);
+$fc-primary--white: rgb(255, 255, 255);
+$fc-secondary--white: rgb(128, 128, 128);
+$fc-secondary--dark: #262626;
+$fc-primary--blue: rgb(25, 130, 198);
+$fc-secondary--green: rgb(58, 160, 30);
+$fc-orange: #c28700;
+$fc-yellow: #ffb100;
+$fc-gold: #cbb273;
+$fc-gold--hover: #dddda9;
+
+//background-colors
+$bgc-primary--dark: rgb(0, 0, 0);
+$bgc-primary--white: rgb(255, 255, 255);
+$bgc-secondary--dark: #101028;
+$bgc-secondary--white: #f8f8f8;
+$bgc-tertiary--dark: #090916;
+$bgc-tertiary--white: rgb(255, 249, 220);
+$bgc-green: rgb(97, 179, 75);
+$bgc-blue: #1982c6;
+$bgc-ogange: #ffb100;
+$bgc-gold: #cbb273;
+
+//border-colors
+$brc-separetor: #f2f2f2;
+$brc-green: #61b34b;
+$brc-primary--white: #bdbdbd;
+$brc-secondary--white: #c4c4c4;
+$brc-primary--yellow: #ffb100;
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1152px !default;
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  'extra-small': 320px,
+  'small': 640px,
+  'medium': 768px,
+  'medium-small': 980px,
+  'large': 1024px,
+  'extra-large': 1280px,
+  'double-extra-large': 1536px,
+) !default;
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '/assets/' !default;
